@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Discord Custom Emoji Sidebar",
+  "name": "Discord Emoji Sidebar",
   "version": "1.0",
-  "description": "Adds a custom emoji sidebar to Discord.com",
+  "description": "Injects a sidebar from GitHub into Discord.com",
   "permissions": ["scripting"],
   "host_permissions": ["https://discord.com/*"],
   "content_scripts": [
@@ -14,7 +14,7 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["sidebar.html"],
+      "resources": ["sidebar.html", "sidebar.css", "sidebar.js"],
       "matches": ["https://discord.com/*"]
     }
   ]
